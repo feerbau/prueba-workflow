@@ -6,4 +6,5 @@ sanitizers:
   - address
   - undefined
 fuzzing_engines:
-  - jazzer
+  - libfuzzer
+  - afl
