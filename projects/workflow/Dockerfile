@@ -6,9 +6,6 @@ RUN apt-get update && apt-get install -y \
     && npm install -g pnpm \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Jazzer.js for JavaScript fuzzing
-RUN npm install -g @jazzer.js/instrumentor
-
 # Create source directories
 RUN mkdir -p $SRC/workflow $WORK/fuzzers
 
